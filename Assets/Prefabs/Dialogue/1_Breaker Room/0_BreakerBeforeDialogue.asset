@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27eeb791f347cdf4ea8fa0d045d1939b, type: 3}
+  m_Name: 0_BreakerBeforeDialogue
+  m_EditorClassIdentifier: 
+  priority: 1
+  overrideCPS: 100
+  VoiceLines:
+  - lineOfDialogue: 'Alright, thanks to SOTERIA we''ve made it out of the bunker.
+      What''s next?
+
+
+'
+    overrideCPS: -1
+    characterImage: {fileID: 21300000, guid: 85e906945b9cc834c993328b0081cf46, type: 3}
+    pause: 1
+  - lineOfDialogue: We need to head to the breaker room and restore power to the
+      facility. The bunker was running on emergency power, so the rest of the facility
+      will need to be reconnected to the reactor for us to get out.
+    overrideCPS: -1
+    characterImage: {fileID: 21300000, guid: c2cacc61eb7c3ea4ea9e067784c4ff84, type: 3}
+    pause: 1
+  - lineOfDialogue: What if the quake breached the reactor? Wouldn't that mean the
+      radiation leaked?
+    overrideCPS: -1
+    characterImage: {fileID: 21300000, guid: ec66845d91b5ece45b72eec856602f3f, type: 3}
+    pause: 1
+  - lineOfDialogue: If it was damaged it would shut down and seal itself off, protecting
+      us from radiation.
+    overrideCPS: -1
+    characterImage: {fileID: 21300000, guid: c2cacc61eb7c3ea4ea9e067784c4ff84, type: 3}
+    pause: 1
+  - lineOfDialogue: Wait, wouldn't that mean we don't have power?
+    overrideCPS: -1
+    characterImage: {fileID: 21300000, guid: 85752ad75b6ec5245ae80da8e795206c, type: 3}
+    pause: 1
+  - lineOfDialogue: Not quite. The facility has reserve batteries, but they're incredibly
+      limited.
+    overrideCPS: -1
+    characterImage: {fileID: 21300000, guid: c2cacc61eb7c3ea4ea9e067784c4ff84, type: 3}
+    pause: 1
+  - lineOfDialogue: The whole facility runs on one power grid, so we'll have to use
+      power sparingly.
+    overrideCPS: -1
+    characterImage: {fileID: 21300000, guid: 85e906945b9cc834c993328b0081cf46, type: 3}
+    pause: 1
+  - lineOfDialogue: We're almost to the breaker room's floor, get ready...
+    overrideCPS: -1
+    characterImage: {fileID: 21300000, guid: ec66845d91b5ece45b72eec856602f3f, type: 3}
+    pause: 1
+  initialPause: 0

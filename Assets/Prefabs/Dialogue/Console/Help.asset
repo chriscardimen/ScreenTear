@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27eeb791f347cdf4ea8fa0d045d1939b, type: 3}
+  m_Name: Help
+  m_EditorClassIdentifier: 
+  priority: 1
+  overrideCPS: 100
+  VoiceLines:
+  - lineOfDialogue: '><b>help</b>: <i>displays commands</i>
+
+      ><b>start</b>:
+      <i>begins the game
+
+      ><b>load level x: </b><i>loads level x, where x is
+      a level number (1-4)</i>
+
+      ><b>main menu:</b> <i>returns to main menu</i>
+
+      ><b>exit:</b><i>
+      quits the application</i>'
+    overrideCPS: -1
+    characterImage: {fileID: 0}
+    pause: 1
+  initialPause: 0

@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27eeb791f347cdf4ea8fa0d045d1939b, type: 3}
+  m_Name: 1_TutMoveDialogue
+  m_EditorClassIdentifier: 
+  priority: 1
+  overrideCPS: -1
+  VoiceLines:
+  - lineOfDialogue: 'SURVIVOR <b>MOVEMENT</b> protocol: <b>left-click</b> or <b>left-click
+      and drag</b> to select survivors. <b>Right-click</b> at a location to move
+      them.'
+    overrideCPS: -1
+    characterImage: {fileID: 21300000, guid: 46a451471ffb61048953171010c87c84, type: 3}
+    pause: 0
+  - lineOfDialogue: Are we really gonna listen to this thing?
+    overrideCPS: -1
+    characterImage: {fileID: 21300000, guid: ec66845d91b5ece45b72eec856602f3f, type: 3}
+    pause: 0
+  - lineOfDialogue: It's here to help, do you have a better idea?
+    overrideCPS: -1
+    characterImage: {fileID: 21300000, guid: 85e906945b9cc834c993328b0081cf46, type: 3}
+    pause: 0
+  - lineOfDialogue: When a survivor is selected, <b>right-click</b> on an object
+      to interact with it.
+    overrideCPS: -1
+    characterImage: {fileID: 21300000, guid: 46a451471ffb61048953171010c87c84, type: 3}
+    pause: 0
+  - lineOfDialogue: 'Survivor <b>SPECIALIZATION</b> Protocol: Survivors have been
+      determined to have different skills. Generating list now:'
+    overrideCPS: -1
+    characterImage: {fileID: 21300000, guid: 46a451471ffb61048953171010c87c84, type: 3}
+    pause: 0
+  - lineOfDialogue: '<b>ENGINEER</b>: Opens <b>doors</b> faster.'
+    overrideCPS: -1
+    characterImage: {fileID: 21300000, guid: 46a451471ffb61048953171010c87c84, type: 3}
+    pause: 0
+  initialPause: 0

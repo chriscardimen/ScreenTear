@@ -1,0 +1,64 @@
+.unity-base-field__input {
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.59);
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0.5%;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    -unity-font: url('project://database/Assets/UI/Fonts/SourceCodePro-Regular.ttf?fileID=12800000&guid=be785bddd30c50f428f3f10c0c34f6e8&type=3#SourceCodePro-Regular');
+    -unity-font-definition: url('project://database/Assets/UI/Fonts/SourceCodePro-Regular%20SDF.asset?fileID=11400000&guid=186cfcd5ca98ee946b8393e32b0ccbad&type=2#SourceCodePro-Regular SDF');
+    -unity-text-align: middle-left;
+}
+
+.unity-base-field__input:focus {
+    border-left-color: rgb(32, 255, 0);
+    border-right-color: rgb(32, 255, 0);
+    border-top-color: rgb(32, 255, 0);
+    border-bottom-color: rgb(32, 255, 0);
+    background-color: rgba(0, 0, 0, 0.39);
+}
+
+.unity-base-field__label {
+    color: rgb(32, 255, 0);
+    -unity-text-align: middle-right;
+    white-space: normal;
+    font-size: 40px;
+    padding-left: 0;
+    padding-right: 1%;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.unity-label:active {
+    color: rgb(255, 255, 255);
+    -unity-text-outline-color: rgb(255, 255, 255);
+}
+
+.unity-label:hover {
+    color: rgb(255, 255, 255);
+    -unity-text-outline-color: rgb(255, 255, 255);
+}
+
+.transparentCursor {
+    --unity-cursor-color: rgb(0, 255, 255);
+    -unity-text-align: upper-left;
+}

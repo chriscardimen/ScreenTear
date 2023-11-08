@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c7709283b6914aeb9c68f765e2fc316, type: 3}
+  m_Name: _TelemetrySettings
+  m_EditorClassIdentifier: 
+  serverURLQuery: http://telemetry.prototools.net/queryTelemetryEntries.php
+  serverURLPost: http://telemetry.prototools.net/postTelemetry.php
+  semester: 2022.4
+  project: ScreenTear
+  autoVersion: 1
+  versionOverride: 
+  editorSaveTo: 0
+  playerSaveTo: 2
+  customEvents:
+  - name: Turn
+    type: 7
+    rot: 1
+    overrideColor: 0
+    color: {r: 0.06889391, g: 1, b: 0, a: 1}
+    icon: {fileID: 2800000, guid: e5d9b0dab8f3b9c42b4f8703b74b66a2, type: 3}
+    iconSize: 31.93
+    positionOffset: {x: 0, y: 0, z: 0}
+    scaleMultiplier: 1.82
+  playerName: Aidan
+  sceneName: AidanTestScene

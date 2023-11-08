@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="Container" style="width: 100%; height: 100%; align-items: center; justify-content: center;">
+        <ui:ScrollView horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Hidden" name="CutsceneDialogue" style="width: 25%; height: 30%; -unity-text-align: middle-center; color: rgb(69, 201, 33); font-size: 56px; -unity-font-definition: url(&apos;project://database/Assets/UI/Fonts/3270-Regular%20SDF.asset?fileID=11400000&amp;guid=561c6a3ac0221064c82c9c8c7e0ec999&amp;type=2#3270-Regular SDF&apos;); justify-content: center; align-items: center; margin-top: 10%; white-space: nowrap; -unity-text-outline-width: 2px; -unity-font-style: bold;" />
+    </ui:VisualElement>
+</ui:UXML>

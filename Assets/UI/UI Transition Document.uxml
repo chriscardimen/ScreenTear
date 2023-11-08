@@ -1,0 +1,27 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/USS%20Gameview.uss?fileID=7433441132597879392&amp;guid=04fde72c2d16ae44cabf68c4d754f7ab&amp;type=3#USS Gameview" />
+    <ui:VisualElement name="Container" picking-mode="Ignore" class="DocumentContainer" style="visibility: visible; cursor: url(&apos;project://database/Assets/Art/NewUI/TKCursorDefault.png?fileID=2800000&amp;guid=2d449265fd7aa824296d904e19ac824c&amp;type=3#TKCursorDefault&apos;);">
+        <ui:VisualElement name="Left" picking-mode="Ignore" class="LeftContainer" style="cursor: url(&apos;project://database/Assets/Art/NewUI/TKCursorDefault.png?fileID=2800000&amp;guid=2d449265fd7aa824296d904e19ac824c&amp;type=3#TKCursorDefault&apos;);">
+            <ui:VisualElement name="DialogueContainer" class="DialogueContainer" style="height: 100%; flex-basis: auto;">
+                <ui:VisualElement name="TabContainer" class="UITabContainer" style="flex-direction: row; justify-content: flex-start; height: 100%;">
+                    <ui:Button display-tooltip-when-elided="true" name="DialogueButton" text="Dialogue" class="UITabButton" style="margin-left: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; flex-basis: 40%; background-color: rgba(0, 0, 0, 0); height: 40px; align-items: flex-end; cursor: url(&apos;project://database/Assets/Art/NewUI/TKCursorSelect.png?fileID=2800000&amp;guid=2137fc5bae1a116469968b7125c35ff2&amp;type=3#TKCursorSelect&apos;);">
+                        <ui:Label text="0" display-tooltip-when-elided="true" name="NotificationCount" style="margin-left: 0; margin-right: 6%; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; height: 55%; width: 6%; background-color: rgb(255, 90, 90); border-top-left-radius: 50%; border-bottom-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; font-size: 16px; -unity-font-style: normal; visibility: hidden;" />
+                    </ui:Button>
+                </ui:VisualElement>
+                <ui:VisualElement name="InformationBox" class="DialogueBox" style="-unity-slice-left: 75; -unity-slice-top: 75; -unity-slice-right: 75; -unity-slice-bottom: 75; background-color: rgba(38, 41, 72, 0.94);">
+                    <ui:ScrollView name="DialogueDisplay" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="AlwaysVisible" class="ScrollViewContainer" style="margin-bottom: 3%; display: flex;">
+                        <ui:VisualElement name="DialogueInstance" class="DialogueInstance" style="flex-direction: row; display: none; visibility: hidden;">
+                            <ui:VisualElement name="DialogueImgContainer" class="DialogueImageContainer">
+                                <ui:VisualElement name="DialogueCharacterPic" class="DialogueCharacterPic" style="background-image: none;" />
+                            </ui:VisualElement>
+                            <ui:Label display-tooltip-when-elided="true" name="DialogueText" class="DialogueText" />
+                        </ui:VisualElement>
+                    </ui:ScrollView>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Right" style="width: 70%; align-items: flex-end; justify-content: flex-end; padding-right: 3%; padding-bottom: 2%;">
+            <ui:Button text="Skip" display-tooltip-when-elided="true" name="SkipCutscene" class="SkipCutsceneButton" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

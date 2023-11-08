@@ -1,0 +1,135 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/USS%20Gameview.uss?fileID=7433441132597879392&amp;guid=04fde72c2d16ae44cabf68c4d754f7ab&amp;type=3#USS Gameview" />
+    <ui:VisualElement name="Container" picking-mode="Ignore" class="DocumentContainer" style="visibility: visible; cursor: url(&apos;project://database/Assets/Art/NewUI/TKCursorDefault.png?fileID=2800000&amp;guid=2d449265fd7aa824296d904e19ac824c&amp;type=3#TKCursorDefault&apos;);">
+        <ui:VisualElement name="Left" picking-mode="Ignore" class="LeftContainer" style="cursor: url(&apos;project://database/Assets/Art/NewUI/TKCursorDefault.png?fileID=2800000&amp;guid=2d449265fd7aa824296d904e19ac824c&amp;type=3#TKCursorDefault&apos;);">
+            <ui:VisualElement name="DialogueContainer" class="DialogueContainer" style="height: 100%;">
+                <ui:VisualElement name="TabContainer" class="UITabContainer" style="flex-direction: row; justify-content: flex-start; height: 100%;">
+                    <ui:Button display-tooltip-when-elided="true" name="DialogueButton" text="Dialogue" class="UITabButton" style="margin-left: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; flex-basis: 40%; background-color: rgba(0, 0, 0, 0); height: 40px; align-items: flex-end; cursor: url(&apos;project://database/Assets/Art/NewUI/TKCursorSelect.png?fileID=2800000&amp;guid=2137fc5bae1a116469968b7125c35ff2&amp;type=3#TKCursorSelect&apos;);">
+                        <ui:Label text="0" display-tooltip-when-elided="true" name="NotificationCount" style="margin-left: 0; margin-right: 6%; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; height: 55%; width: 6%; background-color: rgb(255, 90, 90); border-top-left-radius: 50%; border-bottom-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; font-size: 16px; -unity-font-style: normal; visibility: hidden;" />
+                    </ui:Button>
+                    <ui:Button text="Objectives" display-tooltip-when-elided="true" name="ObjectivesButton" class="UITabButton" style="flex-basis: 40%; margin-left: 0; margin-top: 0; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; background-color: rgba(88, 88, 88, 0); padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; margin-bottom: 0; cursor: url(&apos;project://database/Assets/Art/NewUI/TKCursorSelect.png?fileID=2800000&amp;guid=2137fc5bae1a116469968b7125c35ff2&amp;type=3#TKCursorSelect&apos;);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="InformationBox" class="DialogueBox" style="-unity-slice-left: 75; -unity-slice-top: 75; -unity-slice-right: 75; -unity-slice-bottom: 75;">
+                    <ui:ScrollView name="DialogueDisplay" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="AlwaysVisible" class="ScrollViewContainer" style="margin-bottom: 3%; display: none;">
+                        <ui:VisualElement name="DialogueInstance" class="DialogueInstance" style="flex-direction: row; display: none; visibility: hidden;">
+                            <ui:VisualElement name="DialogueImgContainer" class="DialogueImageContainer">
+                                <ui:VisualElement name="DialogueCharacterPic" class="DialogueCharacterPic" style="background-image: none;" />
+                            </ui:VisualElement>
+                            <ui:Label display-tooltip-when-elided="true" name="DialogueText" class="DialogueText" />
+                        </ui:VisualElement>
+                    </ui:ScrollView>
+                    <ui:VisualElement name="ObjectiveDisplay" class="ObjectiveDisplayContainer" style="margin-top: 10%; display: flex;">
+                        <ui:VisualElement name="PrimaryObjective" style="flex-basis: 30%; -unity-font-definition: url(&apos;project://database/Assets/UI/Fonts/3270-Regular%20SDF.asset?fileID=11400000&amp;guid=561c6a3ac0221064c82c9c8c7e0ec999&amp;type=2#3270-Regular SDF&apos;);">
+                            <ui:Label display-tooltip-when-elided="true" name="PrimaryObjectiveLabel" text="Primary Objectives" class="InformationStateLabel" style="font-size: 30px; -unity-text-align: middle-left; margin-left: 3%; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 2%;" />
+                            <ui:Label display-tooltip-when-elided="true" name="ObjectiveTitle" text="Label" class="ObjectiveTitle" style="white-space: normal;" />
+                            <ui:Label display-tooltip-when-elided="true" name="ObjectiveDescription" text="Label" class="InformationStateDescription" style="margin-top: 2%; margin-bottom: 2%; font-size: 18px; white-space: normal;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="SecondaryObjectives" style="flex-basis: 70%; flex-direction: column; border-top-width: 2px; border-bottom-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); margin-top: 2%;">
+                            <ui:Label display-tooltip-when-elided="true" name="SubObjectivesLabel" text="Sub-Objectives" class="InformationStateLabel" style="-unity-font-definition: url(&apos;project://database/Assets/UI/Fonts/3270-Regular%20SDF.asset?fileID=11400000&amp;guid=561c6a3ac0221064c82c9c8c7e0ec999&amp;type=2#3270-Regular SDF&apos;); font-size: 30px; -unity-text-align: middle-left; margin-left: 3%; margin-right: 0; margin-top: 1%; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 2%;" />
+                            <ui:ScrollView horizontal-scroller-visibility="Hidden">
+                                <ui:VisualElement name="SubObjectiveContainer" class="informationStateContainer" style="display: flex; overflow: visible;">
+                                    <ui:Label text="Label" display-tooltip-when-elided="true" name="SecondaryObjectiveTitle" class="ObjectiveSubName" style="display: none; visibility: hidden;" />
+                                    <ui:Label text="Label" display-tooltip-when-elided="true" name="SecondaryObjectiveDescription" class="ObjectiveSubDesc" style="display: none; visibility: hidden; margin-left: 5%;" />
+                                </ui:VisualElement>
+                            </ui:ScrollView>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Information" class="InformationContainer" style="flex-basis: 45%; margin-left: 0;">
+                <ui:VisualElement name="Buttons" class="InformationButtonsContainer" style="flex-direction: row; align-items: auto; flex-basis: 15%;">
+                    <ui:VisualElement name="ButtonContainer" style="flex-basis: 95%; flex-direction: row; align-items: auto; height: 80%;">
+                        <ui:Button text="Survivors" display-tooltip-when-elided="true" name="SurvivorsButton" class="UITabButton" style="flex-basis: 33%; margin-left: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; background-color: rgba(88, 88, 88, 0);" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="InformationDisplay" class="InformationDisplay" style="background-image: url(&apos;project://database/Assets/Art/NewUI/SquareWindow.png?fileID=21300000&amp;guid=8c3698285b0bead4f80ae160b96bac04&amp;type=3#SquareWindow&apos;);">
+                    <ui:VisualElement name="SurvivorDisplay" class="InformationDisplayView" style="display: flex; margin-top: 9%; flex-direction: column; margin-left: 3.5%; margin-bottom: 1.5%; overflow: hidden; margin-right: 2%;">
+                        <ui:VisualElement name="SurvivorDisplayDividerTop" class="SurvivorDisplayDivider">
+                            <ui:VisualElement name="Character0Stats" class="InformationQuarter InformationHalf" style="flex-direction: row;">
+                                <ui:VisualElement name="Character0Image" class="InformationStateImage" />
+                                <ui:VisualElement name="Character0Info" class="InformationStateInfoContainer">
+                                    <ui:Label text="Character 0" display-tooltip-when-elided="true" name="Character0NameStats" class="InformationStateName" />
+                                    <ui:ProgressBar name="Character0HealthDisplay" high-value="1" class="InformationStateHealthSlider" style="overflow: hidden; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0;" />
+                                    <ui:Label text="Label" display-tooltip-when-elided="true" name="Character0StatsDisplay" class="InformationStateDescription" />
+                                    <ui:VisualElement name="Character0InvContainer" class="InformationStateInvContainer" style="flex-direction: row; height: 50%;">
+                                        <ui:VisualElement name="Character0Inv1" class="InventoryItem" />
+                                        <ui:VisualElement name="Character0Inv2" class="InventoryEmpty" style="flex-direction: row;" />
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="Character1Stats" class="InformationQuarter InformationHalf">
+                                <ui:VisualElement name="Character1Image" class="InformationStateImage" />
+                                <ui:VisualElement name="Character1Info" class="InformationStateInfoContainer">
+                                    <ui:Label text="Character 1" display-tooltip-when-elided="true" name="Character1NameStats" class="InformationStateName" />
+                                    <ui:ProgressBar name="Character1HealthDisplay" high-value="1" class="InformationStateHealthSlider" style="overflow: hidden; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0;" />
+                                    <ui:Label text="Label" display-tooltip-when-elided="true" name="Character1StatsDisplay" class="InformationStateDescription" />
+                                    <ui:VisualElement name="Character1InvContainer" class="InformationStateInvContainer" style="flex-direction: row; height: 50%;">
+                                        <ui:VisualElement name="Character1Inv1" class="InventoryItem" style="background-image: url(&apos;project://database/Assets/Art/NewUI/InventoryIcons/noun-keycard-1899347.png?fileID=2800000&amp;guid=e8cd3af6b51b64c4caff7ad69b3a79ed&amp;type=3#noun-keycard-1899347&apos;);" />
+                                        <ui:VisualElement name="Character1Inv2" class="InventoryEmpty" style="flex-direction: row;" />
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="SurvivorDisplayDividerBottom" class="SurvivorDisplayDivider">
+                            <ui:VisualElement name="Character2Stats" class="InformationQuarter InformationHalf">
+                                <ui:VisualElement name="Character2Image" class="InformationStateImage" />
+                                <ui:VisualElement name="Character2Info" class="InformationStateInfoContainer">
+                                    <ui:Label text="Character 2" display-tooltip-when-elided="true" name="Character2NameStats" class="InformationStateName" />
+                                    <ui:ProgressBar name="Character2HealthDisplay" high-value="1" class="InformationStateHealthSlider" style="border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0;" />
+                                    <ui:Label text="Label" display-tooltip-when-elided="true" name="Character2StatsDisplay" class="InformationStateDescription" />
+                                    <ui:VisualElement name="Character2InvContainer" class="InformationStateInvContainer" style="flex-direction: row; height: 50%;">
+                                        <ui:VisualElement name="Character2Inv1" class="InventoryItem" style="background-image: url(&apos;project://database/Assets/Art/NewUI/InventoryIcons/noun-keycard-1899347.png?fileID=2800000&amp;guid=e8cd3af6b51b64c4caff7ad69b3a79ed&amp;type=3#noun-keycard-1899347&apos;);" />
+                                        <ui:VisualElement name="Character2Inv2" class="InventoryEmpty" style="flex-direction: row;" />
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="Character3Stats" class="InformationQuarter InformationHalf">
+                                <ui:VisualElement name="Character3Image" class="InformationStateImage" />
+                                <ui:VisualElement name="Character3Info" class="InformationStateInfoContainer">
+                                    <ui:Label text="Character 3" display-tooltip-when-elided="true" name="Character3NameStats" class="InformationStateName" />
+                                    <ui:ProgressBar name="Character3HealthDisplay" high-value="1" class="InformationStateHealthSlider" style="border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; overflow: hidden;" />
+                                    <ui:Label text="Label" display-tooltip-when-elided="true" name="Character3StatsDisplay" class="InformationStateDescription" />
+                                    <ui:VisualElement name="Character3InvContainer" class="InformationStateInvContainer" style="flex-direction: row; height: 50%;">
+                                        <ui:VisualElement name="Character3Inv1" class="InventoryItem" style="background-image: url(&apos;project://database/Assets/Art/NewUI/InventoryIcons/noun-keycard-1899347.png?fileID=2800000&amp;guid=e8cd3af6b51b64c4caff7ad69b3a79ed&amp;type=3#noun-keycard-1899347&apos;);" />
+                                        <ui:VisualElement name="Character3Inv2" class="InventoryEmpty" style="flex-direction: row;" />
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Right" picking-mode="Ignore" class="RightContainer" style="flex-basis: 70%; margin-left: 20px; margin-right: 70px; margin-top: 70px; margin-bottom: 70px; cursor: url(&apos;project://database/Assets/Art/NewUI/TKCursorDefault.png?fileID=2800000&amp;guid=2d449265fd7aa824296d904e19ac824c&amp;type=3#TKCursorDefault&apos;);">
+            <ui:VisualElement name="MapContainer" picking-mode="Ignore" class="MapContainer" style="flex-basis: 100%; margin-bottom: 0;">
+                <ui:VisualElement name="Map" picking-mode="Ignore" class="MapDisplay" style="flex-basis: 100%; background-image: url(&apos;project://database/Assets/Art/NewUI/SquareWindow.png?fileID=21300000&amp;guid=8c3698285b0bead4f80ae160b96bac04&amp;type=3#SquareWindow&apos;); flex-direction: column;">
+                    <ui:VisualElement name="FloorViewTopHalf" picking-mode="Ignore" style="height: 50%; flex-direction: row-reverse;">
+                        <ui:VisualElement name="FloorViewDivider" picking-mode="Ignore" class="FloorViewContainer" style="height: 437px; width: 167px; flex-direction: row; align-items: center; padding-top: 10%; padding-left: 3%;">
+                            <ui:VisualElement name="FloorViewContainer" picking-mode="Ignore" class="FloorViewContainer" style="height: 437px; width: 167px; flex-direction: column; align-items: center;">
+                                <ui:Button display-tooltip-when-elided="true" name="NormalFloor" class="FloorViewButton" style="background-image: url(&apos;project://database/Assets/Art/NewUI/InventoryIcons/emptycircle-white.png?fileID=2800000&amp;guid=29876229cf714cc46809dcda3e5fb58d&amp;type=3#emptycircle-white&apos;); border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0); background-color: rgba(188, 188, 188, 0); overflow: hidden; height: 17%; cursor: url(&apos;project://database/Assets/Art/NewUI/TKCursorSelect.png?fileID=2800000&amp;guid=2137fc5bae1a116469968b7125c35ff2&amp;type=3#TKCursorSelect&apos;);" />
+                                <ui:Button display-tooltip-when-elided="true" name="OxygenFloor" class="FloorViewButton" style="background-color: rgba(255, 255, 255, 0); border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0); background-image: url(&apos;project://database/Assets/Art/NewUI/InventoryIcons/noun-cylinder-1741559.png?fileID=2800000&amp;guid=bd0f3cde0e5b50547845c01cbf2fc81e&amp;type=3#noun-cylinder-1741559&apos;); margin-bottom: 8%; cursor: url(&apos;project://database/Assets/Art/NewUI/TKCursorSelect.png?fileID=2800000&amp;guid=2137fc5bae1a116469968b7125c35ff2&amp;type=3#TKCursorSelect&apos;);" />
+                                <ui:Button display-tooltip-when-elided="true" name="PowerFloor" class="FloorViewButton" style="border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0); background-color: rgba(188, 188, 188, 0); background-image: url(&apos;project://database/Assets/Art/NewUI/InventoryIcons/noun-lightning-3603973.png?fileID=2800000&amp;guid=996d5b6dcc1db6a4cb55872821b8a4f9&amp;type=3#noun-lightning-3603973&apos;); cursor: url(&apos;project://database/Assets/Art/NewUI/TKCursorSelect.png?fileID=2800000&amp;guid=2137fc5bae1a116469968b7125c35ff2&amp;type=3#TKCursorSelect&apos;); width: 75%; height: 20%;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="PowerContainer" picking-mode="Ignore" class="FloorViewContainer" style="height: 437px; width: 50px; flex-direction: column; align-items: center;">
+                                <ui:Button display-tooltip-when-elided="true" name="NormalHidden" class="FloorViewButton" style="background-image: url(&apos;project://database/Assets/Art/NewUI/InventoryIcons/emptycircle-white.png?fileID=2800000&amp;guid=29876229cf714cc46809dcda3e5fb58d&amp;type=3#emptycircle-white&apos;); border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0); background-color: rgba(188, 188, 188, 0); overflow: hidden; height: 17%; cursor: url(&apos;project://database/Assets/Art/NewUI/TKCursorSelect.png?fileID=2800000&amp;guid=2137fc5bae1a116469968b7125c35ff2&amp;type=3#TKCursorSelect&apos;); visibility: hidden;" />
+                                <ui:Button display-tooltip-when-elided="true" name="OxygenHidden" class="FloorViewButton" style="background-color: rgba(255, 255, 255, 0); border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0); background-image: url(&apos;project://database/Assets/Art/NewUI/InventoryIcons/noun-cylinder-1741559.png?fileID=2800000&amp;guid=bd0f3cde0e5b50547845c01cbf2fc81e&amp;type=3#noun-cylinder-1741559&apos;); margin-bottom: 8%; cursor: url(&apos;project://database/Assets/Art/NewUI/TKCursorSelect.png?fileID=2800000&amp;guid=2137fc5bae1a116469968b7125c35ff2&amp;type=3#TKCursorSelect&apos;); visibility: hidden;" />
+                                <ui:ProgressBar name="GlobalPowerMeter" high-value="1" class="PowerMeter" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="HoverInfoBottomHalf" picking-mode="Ignore" style="height: 50%; flex-direction: column-reverse;">
+                        <ui:VisualElement name="HoverInfo" style="background-image: url(&apos;project://database/Assets/Art/NewUI/RoomInfoTabGrey.png?fileID=2800000&amp;guid=169a979b68f6df94ab0947f1562f538a&amp;type=3#RoomInfoTabGrey&apos;); width: 99%; height: 20%; -unity-background-scale-mode: stretch-to-fill; -unity-slice-left: 125; -unity-slice-top: 125; -unity-slice-right: 125; -unity-slice-bottom: 125; margin-left: 0.5%; margin-right: 0.5px; background-color: rgb(39, 42, 73); align-items: center; justify-content: center;">
+                            <ui:Label text="//" display-tooltip-when-elided="true" name="HoverText" style="width: 94%; height: 50%; margin-left: 3%; margin-right: 3%; margin-top: 3.25%; margin-bottom: 1%; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; -unity-text-align: middle-left; color: rgb(0, 255, 0); font-size: 28px; background-color: rgb(39, 42, 73); -unity-font-definition: url(&apos;project://database/Assets/UI/Fonts/SourceCodePro-Regular%20SDF.asset?fileID=11400000&amp;guid=186cfcd5ca98ee946b8393e32b0ccbad&amp;type=2#SourceCodePro-Regular SDF&apos;); -unity-font: url(&apos;project://database/Assets/UI/Fonts/SourceCodePro-Regular.ttf?fileID=12800000&amp;guid=be785bddd30c50f428f3f10c0c34f6e8&amp;type=3#SourceCodePro-Regular&apos;);" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="MapTabContainer" picking-mode="Ignore" class="UITabContainer">
+                    <ui:Button display-tooltip-when-elided="true" name="MapButton" text="Map" class="UITabButton" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; flex-basis: 25%; background-image: url(&apos;project://database/Assets/Art/NewUI/tabUnclicked.png?fileID=21300000&amp;guid=a19b2688c788a7b45b6e816a9823819e&amp;type=3#tabUnclicked&apos;); background-color: rgba(255, 255, 255, 0); -unity-text-outline-color: rgb(0, 0, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="BugReport" style="position: absolute; right: 7px; top: 0; width: 100px; height: 100px; margin-right: 0; margin-top: 0; border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; background-color: rgba(0, 0, 0, 0); align-items: center; justify-content: center; margin-left: 0; margin-bottom: 0; overflow: visible; cursor: initial;">
+            <ui:Button display-tooltip-when-elided="true" name="BugReportToggle" class="BugReportButton" style="margin-left: 0; margin-right: 0; margin-top: 11%; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; width: 95%; height: 95%; align-items: center; justify-content: center; background-image: url(&apos;project://database/Assets/Images/Bug%20Report.png?fileID=21300000&amp;guid=5106bbfbbbc28e843af741198c77902b&amp;type=3#Bug Report&apos;); background-color: rgba(255, 255, 255, 0); overflow: hidden; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; font-size: 16px; -unity-font-style: normal; cursor: url(&apos;project://database/Assets/Art/NewUI/TKCursorSelect.png?fileID=2800000&amp;guid=2137fc5bae1a116469968b7125c35ff2&amp;type=3#TKCursorSelect&apos;); -unity-text-outline-color: rgb(255, 255, 255); color: rgb(255, 255, 255); -unity-background-image-tint-color: rgb(255, 255, 255);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

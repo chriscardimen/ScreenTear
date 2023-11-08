@@ -1,0 +1,987 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1616987708899037655
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1616987708899037654}
+  - component: {fileID: 1616987708899037648}
+  - component: {fileID: 1616987708899037651}
+  - component: {fileID: 1616987708899037650}
+  - component: {fileID: 1905466589}
+  - component: {fileID: 1905466581}
+  - component: {fileID: 1905466587}
+  - component: {fileID: 13741386787090197}
+  - component: {fileID: 5217619626671943824}
+  - component: {fileID: 6172613945395228999}
+  - component: {fileID: 2880819352511866903}
+  - component: {fileID: 6972673582873317866}
+  - component: {fileID: 573306545}
+  - component: {fileID: 573306540}
+  - component: {fileID: 573306541}
+  - component: {fileID: 935901006}
+  - component: {fileID: 935901007}
+  - component: {fileID: 935901008}
+  - component: {fileID: 1548138621017096554}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1616987708899037654
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616987708899037655}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1616987708899037648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616987708899037655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97fa71b013d1fca4d8bff7470c6c8cd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalPower: 1000
+--- !u!114 &1616987708899037651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616987708899037655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b30a9f703188cc1498da1de874a432ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 13741386787090197}
+    - {fileID: 0}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: primaryObjective
+      Entry: 7
+      Data: 0|Objective, Assembly-CSharp
+    - Name: title
+      Entry: 1
+      Data: Reactivate the HVAC Systems
+    - Name: description
+      Entry: 1
+      Data: Reactivate the HVAC Systems to expunge toxic gases from the upper levels.
+    - Name: hasGoal
+      Entry: 5
+      Data: false
+    - Name: goalCompleted
+      Entry: 5
+      Data: false
+    - Name: hiddenFromQuestLog
+      Entry: 5
+      Data: false
+    - Name: parent
+      Entry: 6
+      Data: 
+    - Name: subObjectives
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[Objective, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 7
+      Data: 2|Objective, Assembly-CSharp
+    - Name: title
+      Entry: 1
+      Data: Activate HVAC Console 1
+    - Name: description
+      Entry: 1
+      Data: Activate the console on the first floor.
+    - Name: hasGoal
+      Entry: 5
+      Data: true
+    - Name: goalCompleted
+      Entry: 5
+      Data: false
+    - Name: hiddenFromQuestLog
+      Entry: 5
+      Data: false
+    - Name: parent
+      Entry: 6
+      Data: 
+    - Name: subObjectives
+      Entry: 6
+      Data: 
+    - Name: onCompletionEvents
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 3|Objective, Assembly-CSharp
+    - Name: title
+      Entry: 1
+      Data: Activate HVAC Console 2
+    - Name: description
+      Entry: 1
+      Data: Activate the first console on the second floor.
+    - Name: hasGoal
+      Entry: 5
+      Data: true
+    - Name: goalCompleted
+      Entry: 5
+      Data: false
+    - Name: hiddenFromQuestLog
+      Entry: 5
+      Data: false
+    - Name: parent
+      Entry: 6
+      Data: 
+    - Name: subObjectives
+      Entry: 6
+      Data: 
+    - Name: onCompletionEvents
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 4|Objective, Assembly-CSharp
+    - Name: title
+      Entry: 1
+      Data: Activate HVAC Console 3
+    - Name: description
+      Entry: 1
+      Data: Activate the second console on the second floor.
+    - Name: hasGoal
+      Entry: 5
+      Data: true
+    - Name: goalCompleted
+      Entry: 5
+      Data: false
+    - Name: hiddenFromQuestLog
+      Entry: 5
+      Data: false
+    - Name: parent
+      Entry: 6
+      Data: 
+    - Name: subObjectives
+      Entry: 6
+      Data: 
+    - Name: onCompletionEvents
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 5|Objective, Assembly-CSharp
+    - Name: title
+      Entry: 1
+      Data: Lift Security Lockdown
+    - Name: description
+      Entry: 1
+      Data: Activate the security console.
+    - Name: hasGoal
+      Entry: 5
+      Data: true
+    - Name: goalCompleted
+      Entry: 5
+      Data: false
+    - Name: hiddenFromQuestLog
+      Entry: 5
+      Data: false
+    - Name: parent
+      Entry: 6
+      Data: 
+    - Name: subObjectives
+      Entry: 6
+      Data: 
+    - Name: onCompletionEvents
+      Entry: 7
+      Data: 6|UnityEngine.Events.UnityEvent, UnityEngine.CoreModule
+    - Name: m_PersistentCalls
+      Entry: 7
+      Data: 7|UnityEngine.Events.PersistentCallGroup, UnityEngine.CoreModule
+    - Name: m_Calls
+      Entry: 7
+      Data: 8|System.Collections.Generic.List`1[[UnityEngine.Events.PersistentCall,
+        UnityEngine.CoreModule]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: onCompletionEvents
+      Entry: 7
+      Data: 9|UnityEngine.Events.UnityEvent, UnityEngine.CoreModule
+    - Name: m_PersistentCalls
+      Entry: 7
+      Data: 10|UnityEngine.Events.PersistentCallGroup, UnityEngine.CoreModule
+    - Name: m_Calls
+      Entry: 7
+      Data: 11|System.Collections.Generic.List`1[[UnityEngine.Events.PersistentCall,
+        UnityEngine.CoreModule]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 12|UnityEngine.Events.PersistentCall, UnityEngine.CoreModule
+    - Name: m_Target
+      Entry: 10
+      Data: 0
+    - Name: m_TargetAssemblyTypeName
+      Entry: 1
+      Data: StageManager, Assembly-CSharp
+    - Name: m_MethodName
+      Entry: 1
+      Data: GoToLevel
+    - Name: m_Mode
+      Entry: 3
+      Data: 5
+    - Name: m_Arguments
+      Entry: 7
+      Data: 13|UnityEngine.Events.ArgumentCache, UnityEngine.CoreModule
+    - Name: m_ObjectArgument
+      Entry: 10
+      Data: 1
+    - Name: m_ObjectArgumentAssemblyTypeName
+      Entry: 1
+      Data: UnityEngine.Object, UnityEngine
+    - Name: m_IntArgument
+      Entry: 3
+      Data: 0
+    - Name: m_FloatArgument
+      Entry: 4
+      Data: 0
+    - Name: m_StringArgument
+      Entry: 1
+      Data: _3_Te
+    - Name: m_BoolArgument
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_CallState
+      Entry: 3
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: objDict
+      Entry: 6
+      Data: 
+--- !u!114 &1616987708899037650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616987708899037655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da157e39e6c4c44cb25f374255ceca0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  survivors:
+  - m_Name: Hacker
+    health: 100
+    maxHealth: 100
+    moveSpeed: 4
+    progressBar: {fileID: 0}
+    unpoweredMoveSpeedPenalty: 0.8
+    survivorImage: {fileID: 2800000, guid: 85e906945b9cc834c993328b0081cf46, type: 3}
+    wearingOxygenMask: 0
+    inGameController: {fileID: 0}
+    downedSurvivorInteractable: {fileID: 0}
+    currentRoom: {fileID: 0}
+    interactingWith: {fileID: 0}
+    oxygenRate: 0.85
+    inventory: {fileID: 0}
+    currentState: 0
+  - m_Name: Loader
+    health: 100
+    maxHealth: 100
+    moveSpeed: 3
+    progressBar: {fileID: 0}
+    unpoweredMoveSpeedPenalty: 0.8
+    survivorImage: {fileID: 2800000, guid: ec66845d91b5ece45b72eec856602f3f, type: 3}
+    wearingOxygenMask: 0
+    inGameController: {fileID: 0}
+    downedSurvivorInteractable: {fileID: 0}
+    currentRoom: {fileID: 0}
+    interactingWith: {fileID: 0}
+    oxygenRate: 0.85
+    inventory: {fileID: 0}
+    currentState: 0
+  - m_Name: Engineer
+    health: 100
+    maxHealth: 100
+    moveSpeed: 4
+    progressBar: {fileID: 0}
+    unpoweredMoveSpeedPenalty: 0.8
+    survivorImage: {fileID: 2800000, guid: c2cacc61eb7c3ea4ea9e067784c4ff84, type: 3}
+    wearingOxygenMask: 0
+    inGameController: {fileID: 0}
+    downedSurvivorInteractable: {fileID: 0}
+    currentRoom: {fileID: 0}
+    interactingWith: {fileID: 0}
+    oxygenRate: 0.85
+    inventory: {fileID: 0}
+    currentState: 0
+  - m_Name: Scout
+    health: 100
+    maxHealth: 100
+    moveSpeed: 5
+    progressBar: {fileID: 0}
+    unpoweredMoveSpeedPenalty: 0.8
+    survivorImage: {fileID: 2800000, guid: 85752ad75b6ec5245ae80da8e795206c, type: 3}
+    wearingOxygenMask: 0
+    inGameController: {fileID: 0}
+    downedSurvivorInteractable: {fileID: 0}
+    currentRoom: {fileID: 0}
+    interactingWith: {fileID: 0}
+    oxygenRate: 0.85
+    inventory: {fileID: 0}
+    currentState: 0
+  suffocationRate: 1
+--- !u!82 &1905466589
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616987708899037655}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.26
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1905466581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616987708899037655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6398647c85cc55747b1296bafbfe059d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1905466587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616987708899037655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e069fbedebce542408cafab963d5380e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReportAnalytics: 0
+  LEVEL_NAME_STRING: LevelName
+  DOWNED_COUNT_STRING: Downed
+  TOTAL_DOWNED_COUNT_STRING: TotalDowned
+  OBJECTIVE_COMPLETE_STRING: Completed
+  INTERACTED_STRING: Interacted
+  SELECTED_STRING: Selected
+  IDLE_TIME_STRING: IdleTime
+  ROOM_ENTERED_STRING: Entered
+  MEDBAY_USED_STRING: MedbayUsed
+--- !u!114 &13741386787090197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616987708899037655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4bbc17bc02807f4f806fce039b0ef9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5217619626671943824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616987708899037655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78672c7fd18249e19cf3cd46af24e2f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debugSound: 0
+  maps:
+  - SFXCategory: 0
+    SFXClips:
+    - {fileID: 8300000, guid: 7dc9f9f0c3d4a7e49bdbf4f0f861e0ad, type: 3}
+  - SFXCategory: 1
+    SFXClips:
+    - {fileID: 8300000, guid: 8594a4534fcb6de4aa17ecafc941554d, type: 3}
+  - SFXCategory: 2
+    SFXClips:
+    - {fileID: 8300000, guid: cef2f7fa8d7034243aab68b50912e0b9, type: 3}
+  - SFXCategory: 3
+    SFXClips:
+    - {fileID: 8300000, guid: 6f1ab6aaa3a1a5d42b01785c0db0d6a3, type: 3}
+  - SFXCategory: 4
+    SFXClips:
+    - {fileID: 8300000, guid: dedcc8ac15e23ae45abeb737f22c8bab, type: 3}
+  - SFXCategory: 5
+    SFXClips:
+    - {fileID: 8300000, guid: 1e30bebf49ed2b04f818478aa671d0ed, type: 3}
+  - SFXCategory: 6
+    SFXClips:
+    - {fileID: 8300000, guid: e08ec549d9da5314baaebee0256780a4, type: 3}
+  - SFXCategory: 7
+    SFXClips:
+    - {fileID: 8300000, guid: e6bfb6e90dca78043b07fe221ea18a82, type: 3}
+  - SFXCategory: 8
+    SFXClips:
+    - {fileID: 8300000, guid: fd0555f24a5e55f418ed7b258ca7db89, type: 3}
+    - {fileID: 8300000, guid: 787a988a16e778a48a884edee70a2907, type: 3}
+    - {fileID: 8300000, guid: 8d6c446599787024a81f06515331a8a5, type: 3}
+    - {fileID: 8300000, guid: eb4428b72435b9940b48a61c8e8341ed, type: 3}
+    - {fileID: 8300000, guid: bb58ea93147279a4081523838ed3b8a1, type: 3}
+    - {fileID: 8300000, guid: b7589b64a2d409b449c896dd77b595e3, type: 3}
+    - {fileID: 8300000, guid: c2803a115e1e4eb4eb1494dc3c6a0fcd, type: 3}
+    - {fileID: 8300000, guid: 44ad9b316149c6c419206ebd3ff16339, type: 3}
+    - {fileID: 8300000, guid: ba6cb9a97606d6847a6f9193ef07f3e0, type: 3}
+    - {fileID: 8300000, guid: 5f90c1012f9895046be8904112ec0e2c, type: 3}
+    - {fileID: 8300000, guid: ea25a838ea3cc8146beb3ea89c29709b, type: 3}
+    - {fileID: 8300000, guid: 6a089a6c800f11246a568590e8512b7a, type: 3}
+    - {fileID: 8300000, guid: 0e62f55a345c1fa41814fd0e0dfda90c, type: 3}
+    - {fileID: 8300000, guid: 4de250b541dc5a34a870db1df1a4b3cc, type: 3}
+    - {fileID: 8300000, guid: fc79a6a2c6e463e469fde5fc8d1061ce, type: 3}
+  - SFXCategory: 10
+    SFXClips:
+    - {fileID: 8300000, guid: 2bc5c99fe97ebdf4d827b43de94ef811, type: 3}
+  - SFXCategory: 11
+    SFXClips:
+    - {fileID: 8300000, guid: c67954aa53b2d644ba282b29b1cc2ace, type: 3}
+  - SFXCategory: 12
+    SFXClips:
+    - {fileID: 8300000, guid: 1c8fe2a7e468a1a41920ddd9c436fd57, type: 3}
+  - SFXCategory: 13
+    SFXClips:
+    - {fileID: 8300000, guid: 1539cad31a8bc844fba964b74822e44c, type: 3}
+  - SFXCategory: 9
+    SFXClips:
+    - {fileID: 8300000, guid: 8a6c0c632964ddd4a9021cba6fcc9a07, type: 3}
+--- !u!114 &6172613945395228999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616987708899037655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d48286c07831f674d82284add02813ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allRooms: []
+  roomHeights:
+  - levelNumber: 0
+    highHeight: 0.203
+    lowHeight: -0.474
+  - levelNumber: 1
+    highHeight: 0.203
+    lowHeight: -0.474
+  - levelNumber: 2
+    highHeight: 0.7
+    lowHeight: 0
+  - levelNumber: 3
+    highHeight: 5
+    lowHeight: 0
+  - levelNumber: 4
+    highHeight: 0.038
+    lowHeight: -0.474
+  materialList:
+  - type: 1
+    safeColor: {r: 0, g: 1, b: 0, a: 0.15686275}
+    warningColor: {r: 1, g: 0, b: 0, a: 0.15686275}
+  - type: 2
+    safeColor: {r: 1, g: 1, b: 0, a: 0.15686275}
+    warningColor: {r: 0, g: 0, b: 0, a: 0.15686275}
+  - type: 0
+    safeColor: {r: 1, g: 1, b: 1, a: 0}
+    warningColor: {r: 1, g: 1, b: 1, a: 0}
+  currState: 0
+--- !u!114 &2880819352511866903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616987708899037655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!114 &6972673582873317866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616987708899037655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
+--- !u!82 &573306545
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616987708899037655}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &573306540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616987708899037655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e069fbedebce542408cafab963d5380e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReportAnalytics: 0
+  LEVEL_NAME_STRING: LevelName
+  DOWNED_COUNT_STRING: Downed
+  TOTAL_DOWNED_COUNT_STRING: TotalDowned
+  OBJECTIVE_COMPLETE_STRING: Completed
+  INTERACTED_STRING: Interacted
+  SELECTED_STRING: Selected
+  IDLE_TIME_STRING: IdleTime
+  ROOM_ENTERED_STRING: Entered
+  MEDBAY_USED_STRING: MedbayUsed
+--- !u!114 &573306541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616987708899037655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78672c7fd18249e19cf3cd46af24e2f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debugSound: 0
+  maps:
+  - SFXCategory: 0
+    SFXClips:
+    - {fileID: 8300000, guid: 7dc9f9f0c3d4a7e49bdbf4f0f861e0ad, type: 3}
+  - SFXCategory: 0
+    SFXClips:
+    - {fileID: 8300000, guid: 8594a4534fcb6de4aa17ecafc941554d, type: 3}
+  - SFXCategory: 0
+    SFXClips:
+    - {fileID: 8300000, guid: cef2f7fa8d7034243aab68b50912e0b9, type: 3}
+  - SFXCategory: 0
+    SFXClips:
+    - {fileID: 8300000, guid: dedcc8ac15e23ae45abeb737f22c8bab, type: 3}
+  - SFXCategory: 0
+    SFXClips:
+    - {fileID: 8300000, guid: 1e30bebf49ed2b04f818478aa671d0ed, type: 3}
+  - SFXCategory: 0
+    SFXClips:
+    - {fileID: 8300000, guid: e08ec549d9da5314baaebee0256780a4, type: 3}
+  - SFXCategory: 0
+    SFXClips:
+    - {fileID: 8300000, guid: e6bfb6e90dca78043b07fe221ea18a82, type: 3}
+  - SFXCategory: 0
+    SFXClips:
+    - {fileID: 8300000, guid: 6f1ab6aaa3a1a5d42b01785c0db0d6a3, type: 3}
+--- !u!114 &935901006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616987708899037655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5b00b6a78e04369a36f57e6277b3fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showTelemetry: 0
+  telemetrySettings: {fileID: 0}
+  coneScale: 0.5
+  telemetryEntries: []
+--- !u!114 &935901007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616987708899037655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7758da26a58734620bf909a4ef9e0c52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recordTelemetry: 1
+  telemetrySettings: {fileID: 11400000, guid: 037347efcef5d42ccb3e960477517c96, type: 2}
+  rotationTransform: {fileID: 0}
+  trackers:
+  - id: 0
+    color: {r: 0, g: 0.9808402, b: 1, a: 0}
+    positionTransform: {fileID: 0}
+    rotationTransform: {fileID: 0}
+  - id: 1
+    color: {r: 1, g: 0.8914262, b: 0, a: 0}
+    positionTransform: {fileID: 0}
+    rotationTransform: {fileID: 0}
+  - id: 2
+    color: {r: 1, g: 0, b: 0, a: 0}
+    positionTransform: {fileID: 0}
+    rotationTransform: {fileID: 0}
+  - id: 3
+    color: {r: 0, g: 0.21043992, b: 1, a: 0}
+    positionTransform: {fileID: 0}
+    rotationTransform: {fileID: 0}
+--- !u!114 &935901008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616987708899037655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f4362dbb2b5d91439907ea2f4ab2d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sheetsUrl: https://script.google.com/macros/s/AKfycbwtr3SGHoWAhxoPhNXg2sU2of0enylJAjDbVChmhT6lH9XSO4qiJZ-fqBrOFAwJ3KySnA/exec
+--- !u!114 &1548138621017096554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616987708899037655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf0c7fbde45b8684da68e882d6f8fdcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  consoleName: Game Over
+  terminalInitialization: {fileID: 11400000, guid: b2891b5a4dbe251468aeab99ea7ccae4,
+    type: 2}
+  help: {fileID: 11400000, guid: b2891b5a4dbe251468aeab99ea7ccae4, type: 2}
+  invalidInput: {fileID: 11400000, guid: 553a6a391c89a9a4aae8ebd1e96290a5, type: 2}
+  commandActionPairings:
+  - command: retry
+    action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 13741386787090197}
+          m_TargetAssemblyTypeName: StageManager, Assembly-CSharp
+          m_MethodName: RetryLevel
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - command: quit
+    action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 13741386787090197}
+          m_TargetAssemblyTypeName: StageManager, Assembly-CSharp
+          m_MethodName: GoToMainMenu
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2

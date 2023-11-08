@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27eeb791f347cdf4ea8fa0d045d1939b, type: 3}
+  m_Name: Room 1 Dialogue
+  m_EditorClassIdentifier: 
+  priority: 1
+  overrideCPS: 100
+  VoiceLines:
+  - lineOfDialogue: 'I''m glad to get out of that saferoom, it''s nice to stretch
+      my legs.
+
+
+'
+    overrideCPS: -1
+    pause: 0
+  - lineOfDialogue: Unfortunately, there's nothing to help us in this room.
+    overrideCPS: -1
+    pause: 0
+  - lineOfDialogue: Which room do you think we should go to next? It seems like we
+      could go either right or down depending on how we're feeling.
+    overrideCPS: -1
+    pause: 0
+  - lineOfDialogue: I think we should go down, but we could also go left. What should
+      we do, OlympiaOS?
+    overrideCPS: -1
+    pause: 0
+  initialPause: 0

@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27eeb791f347cdf4ea8fa0d045d1939b, type: 3}
+  m_Name: Opening
+  m_EditorClassIdentifier: 
+  priority: 1
+  overrideCPS: -1
+  VoiceLines:
+  - lineOfDialogue: ">   33576     7723  587769   9237776  8932497  56   64     
+      796748  3964263    446    432783  \r\n>  34   37   94     49   29  26      
+      69       444  28        76    95        27 38   86   52 \r\n>   778     39     
+      62   55  83934    69742    3936 47        45    66994    45   99  94   33 \r\n>    
+      642   96      266345   42       39       27 6533        49    97       2625695 
+      833974  \r\n>  45   86   54     66   59  96       27       67  294        52   
+      97       46   36  67   36 \r\n>   24623     4628  27   52  7675949  2356947 
+      48   36        25    6585729  85   75  35   98 \r\n"
+    overrideCPS: 1000
+    characterImage: {fileID: 0}
+    pause: 0.5
+  - lineOfDialogue: '
+
+      > Version 3.0
+
+      > Date 11.04.2022
+
+      > Developed
+      by:
+
+
+      > Chris Antrim, Chris Cardimen, Raymond Foster, Sebastian Garda
+
+      >
+      Eric Saroian, Dylan McCarroll, Aidan O''Rourke, Nicole Stocks
+
+'
+    overrideCPS: 100
+    characterImage: {fileID: 0}
+    pause: 0
+  - lineOfDialogue: '> Welcome to Screen Tear.
+
+
+      ><b> START</b>: <i>begins
+      the game
+
+      ><b> LOAD LEVEL X: </b><i>loads level x, where x is a level
+      number (1-4)</i>
+
+      ><b> EXIT:</b><i> quits the application</i>'
+    overrideCPS: -1
+    characterImage: {fileID: 0}
+    pause: 0
+  initialPause: 0

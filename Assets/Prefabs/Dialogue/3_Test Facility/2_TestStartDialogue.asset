@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27eeb791f347cdf4ea8fa0d045d1939b, type: 3}
+  m_Name: 2_TestStartDialogue
+  m_EditorClassIdentifier: 
+  priority: 1
+  overrideCPS: -1
+  VoiceLines:
+  - lineOfDialogue: Hey, is that clicking what I think it is?
+    overrideCPS: -1
+    characterImage: {fileID: 21300000, guid: 85e906945b9cc834c993328b0081cf46, type: 3}
+    pause: 1
+  - lineOfDialogue: Shit, that's my Geiger counter, there's a radiation leak.
+    overrideCPS: -1
+    characterImage: {fileID: 21300000, guid: c2cacc61eb7c3ea4ea9e067784c4ff84, type: 3}
+    pause: 1
+  - lineOfDialogue: I thought you said the radiation was sealed, what the hell is
+      going on?
+    overrideCPS: -1
+    characterImage: {fileID: 21300000, guid: 85752ad75b6ec5245ae80da8e795206c, type: 3}
+    pause: 1
+  - lineOfDialogue: They were doing hazardous materials research in this wing, the
+      quake must have breached containment protocols.
+    overrideCPS: -1
+    characterImage: {fileID: 21300000, guid: 85e906945b9cc834c993328b0081cf46, type: 3}
+    pause: 1
+  - lineOfDialogue: I know this! There will be <b>consoles</b> to <b>re-seal the
+      storage chamber</b> around here.
+    overrideCPS: -1
+    characterImage: {fileID: 21300000, guid: ec66845d91b5ece45b72eec856602f3f, type: 3}
+    pause: 1
+  - lineOfDialogue: Don't forget, those need <b>fuses</b> to activate.
+    overrideCPS: -1
+    characterImage: {fileID: 21300000, guid: c2cacc61eb7c3ea4ea9e067784c4ff84, type: 3}
+    pause: 1
+  initialPause: 0
