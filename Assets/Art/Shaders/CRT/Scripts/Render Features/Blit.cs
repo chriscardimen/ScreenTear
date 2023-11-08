@@ -181,11 +181,18 @@ public class Blit : ScriptableRendererFeature {
                 UpdateDstIdentifier();
             }
         }
+            
         
+        renderer.EnqueuePass(blitPass);
+    }
+
+    
+    public override void SetupRenderPasses(ScriptableRenderer renderer, in RenderingData renderingData)
+    {
         var src = (settings.srcType == Target.CameraColor) ? renderer.cameraColorTarget : srcIdentifier;
         var dest = (settings.dstType == Target.CameraColor) ? renderer.cameraColorTarget : dstIdentifier;
         
         blitPass.Setup(src, dest);
-        renderer.EnqueuePass(blitPass);
+        //blitPass.Setup(renderer.cameraColorTarget);  // use of target after allocation
     }
 }
